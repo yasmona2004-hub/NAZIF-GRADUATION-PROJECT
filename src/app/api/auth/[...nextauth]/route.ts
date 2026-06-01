@@ -10,7 +10,7 @@ const handler = NextAuth({
             email:{}
         },
         authorize:async(credentials)=>{
-            const response = await fetch("http://localhost:5203/api/Auth/login",{
+            const response = await fetch("https://nazif.tryasp.net/api/Auth/login",{
                 method:"post",
                 body: JSON.stringify({
                     email:credentials?.email,
